@@ -5,12 +5,12 @@ import * as ImagePicker from 'expo-image-picker';
 import { Alert, Linking, Platform, View } from 'react-native';
 import { useAppDispatch } from '@/store';
 import { setEventFotos } from '@/store/slices/eventsSlice';
-import { useExpoRouter } from 'expo-router/build/global-state/router-store';
+import { useRouter } from 'expo-router';
 
 export default function CreateEventControls() {
     const dispatch = useAppDispatch();
     
-const router = useExpoRouter();
+const router = useRouter();
 
 const goToMap = () => {
   router.push('/map');

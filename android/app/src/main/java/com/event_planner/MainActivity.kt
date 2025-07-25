@@ -1,4 +1,4 @@
-package com.anonymous.diary
+package com.event_planner
 import expo.modules.splashscreen.SplashScreenManager
 
 import android.os.Build

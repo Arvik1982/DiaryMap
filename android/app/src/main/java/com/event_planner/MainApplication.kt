@@ -1,4 +1,4 @@
-package com.anonymous.diary
+package com.event_planner
 
 import android.app.Application
 import android.content.res.Configuration

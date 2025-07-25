@@ -4,6 +4,7 @@ import { Feather } from '@expo/vector-icons';
 import { ImagePickerAsset } from 'expo-image-picker';
 import { useCallback } from 'react';
 import { Button, Modal, FlatList, Image, View } from 'react-native';
+
 import { GestureViewer, useGestureViewerController } from 'react-native-gesture-image-viewer';
 import { Text } from 'react-native-paper';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -46,10 +47,11 @@ export default function ImageModal() {
                 width: '100%',
                 backgroundColor: 'black'
             }}>
+         
             <Modal visible={visible} onRequestClose={() => setVisible(false)}>
                 <View style={{ flex: 1, backgroundColor:'black' }}>
                     <GestureViewer
-                        
+                     
                         data={imgUrisArray}
                         initialIndex={0}
                         onDismiss={() => setVisible(false)}
@@ -172,7 +174,8 @@ export default function ImageModal() {
                             }}>{`${currentIndex + 1} / ${totalCount}`}</Text>
                     </View>
                 </View>
-            </Modal>
+                </Modal>
+              
         </View>
     );
 }

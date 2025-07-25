@@ -9,15 +9,31 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+        "config": {
+            "googleMapsApiKey": "AIzaSyCnfhl971CkXOZCNd4jQDu1_MCUJWSQjTo"
+        },
+        "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true,
-      "package": "com.anonymous.diary"
+        "config": {
+            "googleMaps": {
+                "apiKey": "AIzaSyCnfhl971CkXOZCNd4jQDu1_MCUJWSQjTo"
+            }
+        },
+        "adaptiveIcon": {
+            "foregroundImage": "./assets/images/adaptive-icon.png",
+            "backgroundColor": "#ffffff"
+        },
+        "edgeToEdgeEnabled": true,
+        "package": "com.anonymous.diary",
+        "permissions": [
+            "android.permission.WRITE_EXTERNAL_STORAGE",
+            "android.permission.CAMERA",
+            "android.permission.READ_EXTERNAL_STORAGE",
+            "android.permission.ACCESS_COARSE_LOCATION",
+            "android.permission.ACCESS_FINE_LOCATION",
+            "android.permission.INTERNET"
+        ]
     },
     "web": {
       "bundler": "metro",

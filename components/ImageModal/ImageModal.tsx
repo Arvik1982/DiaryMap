@@ -2,9 +2,8 @@ import { useAppDispatch, useAppSelector } from '@/store';
 import { setIsModalFotoOpen } from '@/store/slices/navigationSlice';
 import { Feather } from '@expo/vector-icons';
 import { ImagePickerAsset } from 'expo-image-picker';
-import { useCallback, useState } from 'react';
-import { Button, Modal } from 'react-native';
-import { FlatList, Image, View } from 'react-native';
+import { useCallback } from 'react';
+import { Button, Modal, FlatList, Image, View } from 'react-native';
 import { GestureViewer, useGestureViewerController } from 'react-native-gesture-image-viewer';
 import { Text } from 'react-native-paper';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -48,8 +47,9 @@ export default function ImageModal() {
                 backgroundColor: 'black'
             }}>
             <Modal visible={visible} onRequestClose={() => setVisible(false)}>
-                <View style={{ flex: 1 }}>
+                <View style={{ flex: 1, backgroundColor:'black' }}>
                     <GestureViewer
+                        
                         data={imgUrisArray}
                         initialIndex={0}
                         onDismiss={() => setVisible(false)}
@@ -57,7 +57,7 @@ export default function ImageModal() {
                         renderItem={renderImage}
                         backdropStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.90)' }}
                         renderContainer={children => <View style={{ flex: 1 }}>{children}</View>}
-                    />
+                    /> 
                     <View
                         style={{
                             position: 'absolute',

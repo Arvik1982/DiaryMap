@@ -1,11 +1,8 @@
 import { StyleSheet, TouchableOpacity, View } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-
 import { useAppDispatch, useAppSelector } from '@/store';
 import { setBottomSheetAddEventMode, setBottomSheetSnapIndex } from '@/store/slices/navigationSlice';
-
 import AppScreenContainer from '@/components/AppScreenContainer/AppScreenContainer';
-
 import {  SNAP_MIDLE } from '@/constants/common';
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 import { useCallback, useState } from 'react';

@@ -4,13 +4,11 @@ import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect, useRef } from 'react';
 import { PaperProvider } from 'react-native-paper';
-import { Provider } from 'react-redux';
-import { useSelector } from 'react-redux';
+import { Provider, useSelector } from 'react-redux';
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { StyleSheet } from 'react-native';
 import store, { RootState } from '@/store';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-
 import AddEventContainer from '@/components/AddEventContainer/AddEventContainer';
 import BsContextProvider from '@/components/BottomsheetProvider/BottomsheetProvider';
 import BottomSheet from '@gorhom/bottom-sheet';

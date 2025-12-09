@@ -1,19 +1,13 @@
-# Expo app 👋
+# 🗺️ DiaryMap — Дневник с геолокацией
 
-Приложение по простановке заметок с возможностью отмечать место на карте
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![ReactNative](https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=%2361DAFB)](https://reactnative.dev)
+[![Expo](https://img.shields.io/badge/Expo-46BC2F?style=flat&logo=expo&logoColor=white)](https://expo.dev)
 
-## Get started
+## 🎯 Что делает
+- Карта с метками дневниковых записей
+- GPS трекинг + история перемещений
+- CRUD операций с заметками на карте
+- Offline-first с expo-sqlite
 
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-## В разработке
+## 🚀 Запуск

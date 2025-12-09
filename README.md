@@ -22,11 +22,11 @@
 - ✅ react-native-maps — iOS работает
   
 ## 📦 **Технический стек**
-"expo": "~51.0.0",
-"expo-location": "~17.0.0", // ✅ GPS
-"expo-sqlite": "~13.0.0", // ✅ Offline
-"react-native-maps": "1.14.0", // iOS✅ Android🔄
-"react-native-paper": "5.12.5"
+-"expo": "~51.0.0",
+-"expo-location": "~17.0.0", // ✅ GPS
+-"expo-sqlite": "~13.0.0", // ✅ Offline
+-"react-native-maps": "1.14.0", // iOS✅ Android🔄
+-"react-native-paper": "5.12.5"
 
 ## 🚀 Запуск
 - git clone https://github.com/Arvik1982/DiaryMap.git

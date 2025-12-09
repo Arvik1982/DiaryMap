@@ -11,7 +11,7 @@
 - Offline-first с expo-sqlite
 
 ## 🚀 Запуск
-git clone https://github.com/Arvik1982/DiaryMap.git
-cd DiaryMap
-pnpm install
-npx expo start
+- git clone https://github.com/Arvik1982/DiaryMap.git
+- cd DiaryMap
+- pnpm install
+- npx expo start
